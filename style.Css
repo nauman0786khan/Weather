@@ -1,0 +1,37 @@
+.boxineer {
+    padding: 40px;
+    box-shadow: 0px 0px 20px #00000096;
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.boxineer h2{
+
+    text-align: center;
+}
+.boxw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+div#getname {
+    text-align: center;
+}
+.search input{
+
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    border: 3px solid #000;
+    border-radius: 30px;
+}
+input[type="text"] {
+    font-size: 30px;
+    text-align: center;
+}
