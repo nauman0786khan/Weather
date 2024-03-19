@@ -1,4 +1,9 @@
-let v = fetch("https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=1c9128c0954c38dfd4b9e43bdfb6888b");
+function getweather(){
+
+let w = document.getElementById("scan").value;
+    console.log(w)
+
+let v = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${w}&appid=beea3435003dac5511b106b3cd2c6350`);
 v.then((vv)=>{
 
 return vv.json();
@@ -19,3 +24,4 @@ document.getElementById("getpre").innerHTML=pressure
 document.getElementById("getwind").innerHTML=wind
 });
 
+}
