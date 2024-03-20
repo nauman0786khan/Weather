@@ -13,7 +13,7 @@ return vv.json();
 
 console.log(rr);
 let temp = `<h2>${rr.main.temp}</h2><p>feels like ${rr.main.feels_like}</p>`
-let name = `<h1>${rr.name}</h1>`
+let name = `<h2>${rr.name}</h2>`
 let humidity = `<h2>${rr.main.humidity}</h2>`
 let pressure = `<h2>${rr.main.pressure}</h2>`
 let wind = `<h2>deg ${rr.wind.deg} Speed ${rr.wind.speed}</h2>`
@@ -25,6 +25,8 @@ document.getElementById("gethum").innerHTML=humidity
 document.getElementById("getpre").innerHTML=pressure
 document.getElementById("getwind").innerHTML=wind
 document.getElementById("locget").innerHTML=location
+let wh = document.getElementById("bo");
+wh.classList.add("boxw1");
 });
 
 }
