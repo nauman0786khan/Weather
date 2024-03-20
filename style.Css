@@ -16,6 +16,7 @@ body{
     text-align: center;
     box-sizing: border-box;
     margin-top: 10px;
+    background: #ffffffd9;
 }
 h1 ,h2{ 
 text-align: center;
@@ -97,7 +98,14 @@ opacity: 0;
     opacity: 1 !important;
 
 }
-
+section#vid:Before {
+    content: "";
+    background: #ffffff59;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
 @media screen and (max-width: 820px){
     .boxineer {
         padding: 40px;
