@@ -21,7 +21,7 @@ let location =`<div style="max-width:100%;overflow:hidden;color:red;width:100%;h
 let wc = rr.weather[0].main;
 console.log(wc)
 if(wc=="Clouds"){
-    document.getElementById("vidc").src="Video/production_id_4771356 (1080p).mp4";
+    document.getElementById("vidc").src="Video/pexels_videos_3723 (1080p).mp4";
 
 
 } else if (wc=="Clear"){
