@@ -11,16 +11,16 @@ body{
     box-shadow: 0px 0px 10px #00000096;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: center !important;
+    display: grid;
+   
     box-sizing: border-box;
     margin-top: 10px;
     background-color: #304364;
     border-radius:20px ;
     background-image: radial-gradient(93.32% 93.32% at 48.69% 50%, rgba(255, 255, 255, 0.3) 0%, rgba(106, 135, 190, 0.3) 49.07%);
 }
-h1 ,h2{ 
+h1{ 
 text-align: center;
 font-family: "Rambla", sans-serif;
 font-weight: 400;
@@ -28,19 +28,28 @@ font-style: normal;
 
 }
 h2{
-font-size: 25;
+font-size: 80px;
+font-family: "Kulim Park", sans-serif; 
+text-align: left;
+font-weight: 400;
 
+margin: 24px 0px;
+display: inline-block;
 }
+h3{
+    font-size: 40px;
+    font-family: "Kulim Park", sans-serif; 
+    text-align: left;
+    font-weight: 400;
+    }
+
 h1{
 
-    font-size: 40px; 
+    font-size: 60px; 
+    font-family: "Kulim Park", sans-serif; 
 }
 
-  
-.boxineer h2{
 
-    text-align: center;
-}
 .boxw {
   height: 100%;
 }
@@ -63,19 +72,25 @@ input[type="text"] {
     text-align: center;
 }
 button.btn {
-    width: 280px;
-    height: 60px;
+    width: 250px;
+    height: 50px;
     border-radius: 30px;
-    background: #010101;
-    color: #fff;
+    background: #fff;
+    color:#0C0C0C;
     font-size: 16px;
     margin-top: 15px;
     align-items: center;
-    margin-left: auto;
+    margin-left: 0px;
     margin-right: auto;
     align-items: center;
     justify-content: center;
     display: flex;
+    font-family: "Kulim Park", sans-serif; 
+    box-shadow: 0px 0px 10px #00000096;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20.43px;
+    border:none;
 }
 section.weather {
     width: 90%;
@@ -148,6 +163,64 @@ height: 100%;
 }
 
 .otherciyt.boxineer {
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 2;
+}
+
+.todayweek.boxineer {
     grid-row-start: 2;
-    grid-row-end: 4;
--c}
+    grid-row-end: 9;
+    grid-column-start: 1;
+}
+
+
+.weather.boxineer {
+    text-align: left;
+}
+body {
+    color: #fff !important;
+    font-family: "Kulim Park", sans-serif; 
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.43px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.image img {
+    margin-left: auto;
+    margin-right: 0px;
+    display: block;
+}
+
+.feelstem {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.temp{
+margin-top: -120px;
+
+}
+.hicol{
+   padding:40px;
+  border-radius: 20px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #304364;
+
+    border: 1px solid #AAAAAA
+}
+.highcol {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    text-align: center;
+}
+.image{
+
+    margin-top: -100px;
+}
