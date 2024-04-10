@@ -36,11 +36,11 @@
    <section id="vid" class="video">
 <video id="vidc" src="" autoplay loop muted></video> -->
 <div class="main">
-<div class="weather boxineer"><div>
-<Button class="location btn">Location</Button>
+<div class="weather boxineer"><div><div id="getn">
+</div>
 <div><h3>Weather</h3><p>Now</p></div><div class="image"><img src="./images/31dd358e9b52309f24acd89c016b9738.png" height="250px"  alt=""></div>
-<div class="temp"><h2>27&#176C</h2><p>Feels like 25&#176</p></div><div class="feelstem">
-<div class="High">High 27&#176C</div><div class="low">Low 18&#176C</div>
+<div class="temp"><div id="gettemp"><h2></h2></div></div><div id="highlow" class="feelstem">
+   
 
 </div>
 </div></div>
@@ -51,10 +51,11 @@
     <h3> Today’s Highlight</h3>
 </div>
 <div class="highcol">
-<div class="hicol"><p>Chances Of rain</p> <h2>30%</h2> </div>
-<div class="hicol"><p>UV index</p> <h2>30%</h2></div>
-<div class="hicol"><p>Wind Status</p> <h2>30%</h2></div>
-<div class="hicol"><p>Humidity</p> <h2>30%</h2></div>
+    <div class="hicol"><p>Humidity</p><div id="gethum"></div> </div>
+
+<div class="hicol"><p>Pressure</p> <div id="getpre"></div></div>
+<div class="hicol"><p>Wind Status</p> <div id="getwind"></div></div>
+<div class="hicol"><p>Wind&#176</p> <div id="deg"></div> </div>
 
 
 </div>
@@ -62,14 +63,16 @@
 
 </div>
 <div class="todayweek boxineer">
-<h2>Today/Week</h2>
-
+<h3>Location</h3>
+<div id="locget"></div>
 </div>
 <div class="otherciyt boxineer">
-<h2>Other Cities</h2>
-
+<h3>Other Cities</h3>
+<div class="highcol">
+<div class="hicol"><p>Haryana</p> <h2>30%</h2></div>
+<div class="hicol"><p>UP</p> <h2>30%</h2></div>
 </div>
-
+</div>
 </div>
 
 
