@@ -28,7 +28,7 @@ font-style: normal;
 
 }
 h2{
-font-size: 80px;
+font-size: 50px;
 font-family: "Kulim Park", sans-serif; 
 text-align: left;
 font-weight: 400;
@@ -37,10 +37,11 @@ margin: 24px 0px;
 display: inline-block;
 }
 h3{
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Kulim Park", sans-serif; 
     text-align: left;
     font-weight: 400;
+    margin-top: 0px;
     }
 
 h1{
@@ -243,10 +244,7 @@ body {
     gap: 40px;
     text-align: center;
 }
-.image{
 
-    margin-top: -100px;
-}
 
 input#scan ,.search input {
     background-color: #304364;
