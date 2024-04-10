@@ -46,7 +46,30 @@ wh.classList.add("boxw1");
 
 
 });
+let U = fetch(`https://api.openweathermap.org/data/2.5/weather?q=Uttar Pradesh
+&appid=beea3435003dac5511b106b3cd2c6350`);
+U.then((UP)=>{
+
+return UP.json();
 
 
+}).then((pp)=>{
 
+console.log(pp);
+let UPtemp = `<h2>${(pp.main.temp-273.15).toFixed(2)}&#176C</h2><p>Feels like ${(pp.main.feels_like-273.15).toFixed(2)}&#176C</p>`
+document.getElementById("UPtem").innerHTML=UPtemp;
+});
+
+let hh = fetch(`https://api.openweathermap.org/data/2.5/weather?q=Haryana&appid=beea3435003dac5511b106b3cd2c6350`);
+hh.then((hr)=>{
+
+return hr.json();
+
+
+}).then((hr1)=>{
+
+console.log(hr1);
+let hrtemp = `<h2>${(hr1.main.temp-273.15).toFixed(2)}&#176C</h2><p>Feels like ${(hr1.main.feels_like-273.15).toFixed(2)}&#176C</p>`
+document.getElementById("hrtem").innerHTML=hrtemp;
+});
 }
