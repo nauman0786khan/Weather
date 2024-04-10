@@ -27,7 +27,7 @@ console.log(locname)
 let deg = `<h2>${rr.wind.deg}</h2>`
 var tm = rr.main.temp
 var cal = (tm-273.15);
-document.getElementById("getn").innerHTML= locname;
+
 document.getElementById("highlow").innerHTML=highlo;
 document.getElementById("gettemp").innerHTML=temp;
 document.getElementById("getname").innerHTML= name;
