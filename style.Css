@@ -1,7 +1,7 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -10,7 +10,7 @@ body{
     padding: 40px;
     box-shadow: 0px 0px 10px #00000096;
     width: 100%;
-    height: 100%;
+    height: auto;
     align-items: center !important;
  
    
@@ -96,13 +96,10 @@ section.weather {
     width: 90%;
     margin: auto;
     padding: 40px;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
 }
-div#locget {
-    margin-top: 50px;
-    padding-bottom: 50px;
-}
+
 
 .boxw1{
     opacity: 1 !important;
@@ -165,6 +162,11 @@ padding:10px !important;
         margin: 10px 0PX 0px 0px  !important;
         display: inline-block;
     }
+    .highcol{
+
+        grid-template-columns:auto !important;
+    }
+
 }
 
 section#vid {
@@ -268,4 +270,20 @@ font-family: "Kulim Park", sans-serif;
 }
 div#getname {
     display: none !important;
+}
+
+@media screen and (max-width: 1200px){
+
+.main{
+
+      display:block;
+    } 
+
+}
+.footer{
+background-color: #000;
+padding: 40px;
+width: auto;
+text-align: center;
+margin-top: 30px;
 }
